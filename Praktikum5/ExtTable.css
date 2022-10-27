@@ -1,0 +1,31 @@
+table,
+td,
+th {
+  border: 1px solid salmon;
+  border-top: 2px solid red;
+  border-right: 2px groove yellow;
+  border-left: 2px dashed green;
+  border-bottom: 2px dotted black;
+}
+
+td {
+  background-color: lawngreen;
+  color: snow;
+  text-align: right;
+  height: 30px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+th {
+  background-color: khaki;
+  color: blue;
+  text-align: right;
+  height: 50px;
+  vertical-align: bottom;
+  padding: 15px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

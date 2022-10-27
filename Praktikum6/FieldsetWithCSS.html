@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="fieldStyle.css" />
+    <title>Pendaftaran Calon Peserta</title>
+  </head>
+  <body>
+    <form name="form1">
+      <fieldset>
+        <legend>Formulir Pendaftaran Calon Anggota Book Club</legend>
+        <div class="test">
+          <div class="gambar">
+            <img src="media/Volume_99.jpg" alt="" />
+            <img src="media/Volume_100.jpg" alt="" />
+            <img src="media/Volume_101.jpg" alt="" />
+          </div>
+          <table cellpadding="10">
+            <tr>
+              <td>Nama</td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>No Telepon</td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Kelamin</td>
+              <td><input type="checkbox" name="pria" id="pria" />Pria <input type="checkbox" name="pria" id="pria" />Wanita</td>
+            </tr>
+            <tr>
+              <td>TTL</td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Genre Favorit</td>
+              <td>
+                <select name="genre" id="genre">
+                  <option value="Fiksi">Fiksi</option>
+                  <option value="Novel">Novel</option>
+                  <option value="manga">Manga</option>
+                  <option value="pendidikan">Pendidikan</option>
+                  <option value="Cerpen">Cerpen</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Divisi</td>
+              <td>
+                <select name="status">
+                  <option value="Manga1">Manga</option>
+                  <option value="nove1">Novel</option>
+                  <option value="Cerpen1">Cerpen</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button>Batal</button>
+                <button>Kirim</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

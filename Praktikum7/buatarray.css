@@ -1,0 +1,13 @@
+p {
+  color: salmon;
+  font-size-adjust: 7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: palegreen;
+}
+
+p#hewan {
+  color: darksalmon;
+  font-size-adjust: 1;
+  font-family: impact;
+  background-color: khaki;
+}
