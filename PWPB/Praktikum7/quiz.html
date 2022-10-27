@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>quiz js</title>
+  </head>
+  <body>
+    <script>
+      alert("Selamat datang di dunia antah berantah, klik ok untuk lanjut");
+      var pilihMath = prompt("Pilih perhitungan yang ingin dilakukan \n 1. +\n 2. -\n 3. / \n 4. * \n 5. %");
+      pilihMath = parseInt(pilihMath);
+
+      switch (pilihMath) {
+        case 1:
+          var angka1 = prompt("masukkan angka pertama");
+          var angka2 = prompt("masukkan angka kedua");
+          var penjumlahan = Number(angka1) + Number(angka2);
+          alert("hasilnya adalah " + penjumlahan);
+          break;
+        case 2:
+          var angka1 = prompt("masukkan angka pertama");
+          var angka2 = prompt("masukkan angka kedua");
+          var kurang = Number(angka1) - Number(angka2);
+          alert("hasilnya adalah " + kurang);
+          break;
+        case 3:
+          var angka1 = prompt("masukkan angka pertama");
+          var angka2 = prompt("masukkan angka kedua");
+          var bagi = Number(angka1) / Number(angka2);
+          alert("hasilnya adalah " + bagi);
+          break;
+        case 4:
+          var angka1 = prompt("masukkan angka pertama");
+          var angka2 = prompt("masukkan angka kedua");
+          var kali = Number(angka1) * Number(angka2);
+          alert("hasilnya adalah " + kali);
+          break;
+        case 5:
+          var angka1 = prompt("masukkan angka pertama");
+          var angka2 = prompt("masukkan angka kedua");
+          var modulus = Number(angka1) % Number(angka2);
+          alert("hasilnya adalah " + modulus);
+          break;
+        default:
+          alert("Apa coba");
+          break;
+      }
+    </script>
+  </body>
+</html>
