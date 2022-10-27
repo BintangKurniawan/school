@@ -1,0 +1,14 @@
+.paragraf1,
+#dua {
+  background-color: brown;
+  margin: 0;
+}
+
+#dua {
+  color: aqua;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>Quiz Js 1</title>
+    <style>
+      body {
+        background-color: deepskyblue;
+      }
+      table {
+        background-color: mediumseagreen;
+      }
+      td,
+      th {
+        color: azure;
+      }
+      .table {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">QUIZ 1 JS</h1>
+    <div class="table" style="margin-top: 50px">
+      <table border="1">
+        <tr>
+          <th colspan="2">Tabel Penjumlahan Dua Angka Saja</th>
+        </tr>
+        <tr>
+          <td><label for="angka1">Angka Pertama</label><br /><input type="text" id="angka1" /></td>
+          <td><label for="angka2">Angka Kedua</label><br /><input type="text" id="angka2" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btn" onclick="tambah()">Hitung</button>
+          </td>
+
+          <td>
+            <p id="hasil">Hasilnya adalah</p>
+          </td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <th colspan="2">Tabel Pengurangan Dua Angka Saja</th>
+        </tr>
+        <tr>
+          <td><label for="angka3">Angka Pertama</label><br /><input type="text" id="angka3" /></td>
+          <td><label for="angka4">Angka Kedua</label><br /><input type="text" id="angka4" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btn" onclick="kurang()">Hitung</button>
+          </td>
+
+          <td>
+            <p id="hasil2">Hasilnya adalah</p>
+          </td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <th colspan="2">Tabel Perkalian Dua Angka Saja</th>
+        </tr>
+        <tr>
+          <td><label for="angka5">Angka Pertama</label><br /><input type="text" id="angka5" /></td>
+          <td><label for="angka6">Angka Kedua</label><br /><input type="text" id="angka6" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btn" onclick="kali()">Hitung</button>
+          </td>
+
+          <td>
+            <p id="hasil3">Hasilnya adalah</p>
+          </td>
+        </tr>
+      </table>
+      <table border="1" style="margin-top: 100px">
+        <tr>
+          <th colspan="2">Tabel Pembagian Dua Angka Saja</th>
+        </tr>
+        <tr>
+          <td><label for="angka7">Angka Pertama</label><br /><input type="text" id="angka7" /></td>
+          <td><label for="angka8">Angka Kedua</label><br /><input type="text" id="angka8" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btn" onclick="bagi()">Hitung</button>
+          </td>
+
+          <td>
+            <p id="hasil4">Hasilnya adalah</p>
+          </td>
+        </tr>
+      </table>
+      <table border="1" style="margin-top: 100px">
+        <tr>
+          <th colspan="2">Tabel Ngitung Persen</th>
+        </tr>
+        <tr>
+          <td><label for="angka9">Angka Pertama</label><br /><input type="text" id="angka9" /></td>
+          <td><label for="angka10">Persen</label><br /><input type="text" id="angka10" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btn" onclick="persen()">Hitung</button>
+          </td>
+
+          <td>
+            <p id="hasil5">Hasilnya adalah</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+  <script>
+    function tambah() {
+      let value1 = document.getElementById("angka1").value;
+      let value2 = document.getElementById("angka2").value;
+      var penjumlahan = Number(value1) + Number(value2);
+      document.getElementById("hasil").innerHTML = "Hasilnya adalah " + penjumlahan;
+    }
+    function kurang() {
+      let value3 = document.getElementById("angka3").value;
+      let value4 = document.getElementById("angka4").value;
+      var pengurangan = value3 - value4;
+      document.getElementById("hasil2").innerHTML = "Hasilnya adalah " + pengurangan;
+    }
+    function kali() {
+      let value5 = document.getElementById("angka5").value;
+      let value6 = document.getElementById("angka6").value;
+      var kali = value5 * value6;
+      document.getElementById("hasil3").innerHTML = "Hasilnya adalah " + kali;
+    }
+    function bagi() {
+      let value7 = document.getElementById("angka7").value;
+      let value8 = document.getElementById("angka8").value;
+      var bagi = value7 / value8;
+      document.getElementById("hasil4").innerHTML = "Hasilnya adalah " + bagi;
+    }
+    function persen() {
+      let value9 = document.getElementById("angka9").value;
+      let value10 = document.getElementById("angka10").value;
+      var persen = (value9 * value10) / 100;
+      document.getElementById("hasil5").innerHTML = "Hasilnya adalah " + persen;
+    }
+  </script>
+</html>

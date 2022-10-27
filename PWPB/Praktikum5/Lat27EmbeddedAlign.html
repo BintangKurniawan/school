@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Embedded CSS dengan Align</title>
+    <style>
+      h1 {
+        height: 44px;
+        color: coral;
+      }
+      body,
+      p {
+        color: #b2d9ea;
+        background-color: teal;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        text-indent: 5cm;
+        text-align: justify;
+      }
+      p.besar {
+        text-transform: uppercase;
+      }
+      p.kecil {
+        text-transform: lowercase;
+      }
+      p.kapital {
+        text-transform: capitalize;
+      }
+      p.ex {
+        color: rgb(255, 220, 244);
+      }
+      p.ex::first-line {
+        color: rgb(0, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ようこそ</h1>
+    <p>Ini adalah paragraph biasa, ditulis dengan warna biru pastel. Default text-color didefinisikan pada body selector.</p>
+    <p class="ex">
+      Ini adalah paragraph with class="ex". Dan warna teks hijau, tapi pada baris kedua, akan berwarna lain, coba kalian buktikan saja -- Dengan text indent. Form adalah salah satu Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quae labore tempore veritatis. Ipsam ratione vel, temporibus doloribus aperiam sapiente amet?
+    </p>
+
+    aku diluar tag p jadi aku tanpa text indent. form adalah salah satu Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque neque, accusamus molestias quisquam laborum dolor corrupti quos saepe cumque eaque!
+    <p class="besar">pengubahan menjadi huruf besar (kapital)</p>
+    <p class="kecil">PENGUBAHAN MENJADI HURUF KECIL</p>
+    <p class="kapital">huruf kapital pada setiap sesi kata</p>
+  </body>
+</html>
