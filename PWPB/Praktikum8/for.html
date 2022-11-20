@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>For pada Javascript</title>
+    <link rel="stylesheet" href="decor.css" />
+  </head>
+  <body>
+    <p id="for"></p>
+    <script>
+      alert("Silahkan masukkan angka");
+      var n = prompt("Masukkan Nilai n");
+      n = parseInt(n);
+      var text = "";
+      var i;
+      for (let i = 0; i < n; i++) {
+        text += "Mengulang angka sebelum Nilai n : " + i + "<br>";
+      }
+      document.getElementById("for").innerHTML = text;
+    </script>
+  </body>
+</html>

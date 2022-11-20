@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="decor.css" />
+    <title>While pada Javascript</title>
+  </head>
+  <body>
+    <p id="ulangwhile"></p>
+    <script>
+      var siswa = ["rusdi", "ricky", "adrian", "kelleher", "rizal"];
+      var i = 0;
+      var text = "";
+      while (siswa[i]) {
+        text += siswa[i] + "<br>";
+        i++;
+      }
+      document.getElementById("ulangwhile").innerHTML = text;
+    </script>
+  </body>
+</html>

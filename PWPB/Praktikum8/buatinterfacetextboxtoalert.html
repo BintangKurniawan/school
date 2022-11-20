@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interface dengan JS</title>
+  </head>
+  <body>
+    <p id="coba">
+      <script>
+        function sayHalo() {
+          var nm = document.getElementById("nama").value;
+          alert("Halo, " + nm);
+        }
+      </script>
+      <label for="">Tulis disini</label>
+      <input type="text" id="nama" onchange="sayHalo();" />
+    </p>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interface dengan JS</title>
+  </head>
+  <body>
+    <p id="coba">
+      <input type="text" name="nilai" />
+      <input type="text" name="nilai" />
+      <input type="button" id="btnAmbilNilai" value="Ambil nilai" onclick="ambilNilai();" />
+      <script>
+        function ambilNilai() {
+          var obj1 = document.getElementsByName("nilai")[0];
+          var obj2 = document.getElementsByName("nilai")[1];
+          var n1 = obj1.value;
+          var n2 = obj2.value;
+          alert("Nilai pertama adalah " + n1);
+          alert("Nilai kedua adalah " + n2);
+        }
+      </script>
+    </p>
+  </body>
+</html>
