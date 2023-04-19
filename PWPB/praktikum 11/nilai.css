@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table,
+td,
+tr {
+  border: 1px solid red;
+  background-color: bisque;
+}
+
+.input {
+  text-align: center;
+}

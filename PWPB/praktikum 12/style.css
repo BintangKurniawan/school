@@ -1,0 +1,30 @@
+body,
+.form {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+}
+
+body .menetukanhari {
+  background-color: crimson;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.dftrnilaisbt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tangga {
+  display: flex;
+}
+.kotak {
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+}
